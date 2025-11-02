@@ -2,9 +2,19 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
 table {
     width: 600px;
     border-collapse: collapse;
+    position: relative;
 }
 
 td,
@@ -16,6 +26,16 @@ th {
 thead {
     background-color: grey;
     color: white;
+}
+
+thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background-color: grey;
+}
+
+tbody > tr:nth-child(2n) {
+    background-color: lightgray;
 }
 
 thead>th {}
