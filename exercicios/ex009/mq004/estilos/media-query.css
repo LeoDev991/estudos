@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* ----------------------------------------------------------
+   📱 TYPICAL DEVICES BREAKPOINTS — MIN & MAX VALUES
+   ----------------------------------------------------------
+
+   🔹 MOBILE SMALL (320px — 374px)
+      - min-width: 320px
+      - max-width: 374px
+
+   🔹 MOBILE MEDIUM (375px — 413px)
+      - min-width: 375px
+      - max-width: 413px
+
+   🔹 MOBILE LARGE (414px — 599px)
+      - min-width: 414px
+      - max-width: 599px
+
+   🔹 TABLET SMALL (600px — 767px)
+      - min-width: 600px
+      - max-width: 767px
+
+   🔹 TABLET (iPad) (768px — 1023px)
+      - min-width: 768px
+      - max-width: 1023px
+
+   🔹 LAPTOP SMALL (1024px — 1279px)
+      - min-width: 1024px
+      - max-width: 1279px
+
+   🔹 DESKTOP (1280px — 1535px)
+      - min-width: 1280px
+      - max-width: 1535px
+
+   🔹 LARGE SCREENS / WIDE (1536px — 1919px)
+      - min-width: 1536px
+      - max-width: 1919px
+
+   🔹 FULL HD / DESKTOP LARGE (1920px — 2559px)
+      - min-width: 1920px
+      - max-width: 2559px
+
+   🔹 2K (2560px — 3839px)
+      - min-width: 2560px
+      - max-width: 3839px
+
+   🔹 4K (3840px+)
+      - min-width: 3840px
+      - max-width: ∞
+---------------------------------------------------------- */
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg);
+        /*Desnecessário*/
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através do curso de HTML e CSS do CursoemVideo';
+    }
+
+    img#iphone {
+        display: none;
+    }
+
+    img#itablet {
+        display: none;
+    }
+
+    img#iprint {
+        display: block;
+    }
+
+    img#ipc {
+        display: none;
+    }
+
+    img#itv {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /*Tablets*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+
+    img#iphone {
+        display: none;
+    }
+
+    img#itablet {
+        display: block;
+    }
+
+    img#iprint {
+        display: none;
+    }
+
+    img#ipc {
+        display: none;
+    }
+
+    img#itv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+
+    /*impressora*/
+    body {
+        background-image: url(../imagens/back-print.jpg);
+    }
+
+    img#iphone {
+        display: none;
+    }
+
+    img#itablet {
+        display: none;
+    }
+
+    img#iprint {
+        display: block;
+    }
+
+    img#ipc {
+        display: none;
+    }
+
+    img#itv {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+
+    /*TV*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#iphone {
+        display: none;
+    }
+
+    img#itablet {
+        display: none;
+    }
+
+    img#iprint {
+        display: none;
+    }
+
+    img#ipc {
+        display: block;
+    }
+
+    img#itv {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1536px) and (max-width: 1919px) {
+
+    /*Grandes Telas*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#iphone {
+        display: none;
+    }
+
+    img#itablet {
+        display: none;
+    }
+
+    img#iprint {
+        display: none;
+    }
+
+    img#ipc {
+        display: none;
+    }
+
+    img#itv {
+        display: block;
+    }
+}
