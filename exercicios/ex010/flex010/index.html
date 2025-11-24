@@ -8,13 +8,16 @@
         div.conteiner {
             background-color: lightsalmon;
             display: flex;
+            flex-flow: row nowrap;
         }
 
         div.itens {
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
-            flex: auto;
+            flex-basis: 300px;
+            flex-shrink: 1;
+            flex-grow: 1;
         }
     </style>
 </head>
@@ -22,13 +25,9 @@
     <h1>Aprendendo sobre Flex Box</h1>
 
     <div class="conteiner">
-        <div class="itens">A</div>
-        <div class="itens">B</div>
-        <div class="itens">C</div>
-        <div class="itens">D</div>
-        <div class="itens">E</div>
-        <div class="itens">F</div>
-        <div class="itens">G</div>
+        <div class="itens">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta dolores inventore, aspernatur error quos impedit accusantium modi nemo nihil nisi a, doloribus, commodi id similique velit. Deserunt libero asperiores maxime.</div>
+        <div class="itens">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta dolores inventore, aspernatur error quos impedit accusantium modi nemo nihil nisi a, doloribus, commodi id similique velit. Deserunt libero asperiores maxime. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius necessitatibus impedit deleniti voluptatum! Placeat totam ab nostrum vel molestias soluta omnis aliquam eligendi debitis, molestiae laboriosam culpa repellendus quas tenetur?</div>
+        <div class="itens">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta dolores inventore, aspernatur error quos impedit accusantium modi nemo nihil nisi a, doloribus, commodi id similique velit. Deserunt libero asperiores maxime. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo nesciunt ut nobis commodi et explicabo consectetur distinctio vero odio dolores earum inventore impedit dolorem, necessitatibus voluptatum. Magnam ut porro exercitationem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti aliquam esse obcaecati provident id laboriosam iure, quidem nobis veniam at natus voluptas, minus pariatur in facilis. Ex assumenda aperiam dolore!</div>
     </div>
 </body>
 </html>
